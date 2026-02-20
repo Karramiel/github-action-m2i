@@ -1,0 +1,14 @@
+name: "01 - simple exemple"
+
+on: push
+
+jobs:
+  affiche-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher des infos
+        run: |
+          echo "L'évènement qui a déclenché ce workflow est : ${{ github.event_name }}"
+          echo "Auteur :  ${{ github.actor }}"  
+          echo "Nom : ${{ github.ref_name }}"  
+          echo "Sha :  ${{ github.sha }}"  
