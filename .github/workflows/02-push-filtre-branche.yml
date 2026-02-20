@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Afficher des infos
         run: |
-          echo "Branch Dectectée : ${{ github.ref_name }}
+          echo "Branch Dectectée : ${{ github.ref_name }}"
