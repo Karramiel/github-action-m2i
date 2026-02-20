@@ -1,0 +1,15 @@
+name: "02 - Push filtre branches"
+
+on: 
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  affiche-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher des infos
+        run: |
+          echo "Branch Dectectée : ${{ github.ref_name }}
